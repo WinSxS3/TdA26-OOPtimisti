@@ -8,7 +8,7 @@ app.get("/api", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("Hello TdA");
+  res.sendFile(__dirname + "/index.html");
 });
 
 const PORT = process.env.PORT || 3000;
